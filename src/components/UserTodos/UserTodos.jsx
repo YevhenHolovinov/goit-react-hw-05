@@ -1,23 +1,21 @@
-export const Reviews = () => {
+import css from './UserTodos.module.css';
+
+export default function UserTodos () {
     return (
-      <section>
-        <div>
-          <h2>First review - 4.6/5</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem harum
-            architecto sapiente corporis, voluptatem quas voluptatibus fugiat
-            nulla commodi quidem, dolorem distinctio inventore blanditiis illo
-            tenetur aut enim ex laborum!
-          </p>
+        <div className={css.container}>
+            <h2 className={css.header} >User Todos</h2>
+            {/* {<ul>
+                {todos.map((todo) => (
+                    <li 
+                       key={todo.id}
+                       className={
+                        todo.completed ? css.completed : css.pending
+                       } 
+                    >
+                        {todo.todo}
+                    </li>
+                ))}
+                </ul>} */}
         </div>
-        <div>
-          <h2>Second review - 4.8/5</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            nihil ea, eaque fugit amet possimus officiis asperiores aperiam facere
-            et?
-          </p>
-        </div>
-      </section>
     );
-  };
+};
