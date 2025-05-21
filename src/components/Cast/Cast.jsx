@@ -15,7 +15,6 @@ export default function Cast() {
 
   useEffect(() => {
     async function handleMovieCast() {
-      //   if (!movieId) return;
       try {
         setIsLoading(true);
         setIsError(false);

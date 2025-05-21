@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-// import { useDebounce } from 'use-debounce';
-
 import { featchSearchMovie } from '../../movies';
 
 import MoviesList from '../../components/MoviesList/MoviesList';
@@ -44,18 +42,6 @@ export default function MoviesPage() {
   const handleSearchMovie = (query) => {
     setSearchParams(query);
   };
-
-  // const handleSearchMovie = (event) => {
-  //   const nextParams = new URLSearchParams(searchParams);
-
-  //   if (event.target.value !== '') {
-  //     nextParams.set('query', event.target.value);
-  //   } else {
-  //     nextParams.delete('query');
-  //   }
-
-  //   setSearchParams(nextParams);
-  // };
 
   return (
     <section className={css.container}>
